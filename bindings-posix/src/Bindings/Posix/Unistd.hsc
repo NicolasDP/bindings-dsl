@@ -222,6 +222,7 @@ import Bindings.Posix.Sys.Types
 #ccall readlink , CString -> CString -> CSize -> IO <ssize_t>
 #ccall readlinkat , CInt -> CString -> CString -> CSize -> IO <ssize_t>
 #ccall rmdir , CString -> IO CInt
+#ccall sethostname , CString -> CSize -> IO CInt
 #ccall setegid , <gid_t> -> IO CInt
 #ccall seteuid , <uid_t> -> IO CInt
 #ccall setgid , <gid_t> -> IO CInt
